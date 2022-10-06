@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
   
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 18px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -18,20 +19,21 @@
 
   <main class="main-container">
     <header class="header">
-      <img src="./images/icon-menu.svg" alt="Icono menu">
-      <img src="./images/logo.svg" alt="logo tienda">
+      <div class="header__navegation">
+        <img class="header__menu" src="./images/icon-menu.svg" alt="Icono menu">
+        <img class="header__logo" src="./images/logo.svg" alt="logo tienda">
+
+        <nav class="navbar">
+          <ul class="navbar__items">
+            <li><a class="navbar__link" href="#">Collections</a></li>
+            <li><a class="navbar__link" href="#">Men</a></li>
+            <li><a class="navbar__link" href="#">Women</a></li>
+            <li><a class="navbar__link" href="#">About</a></li>
+            <li><a class="navbar__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       
-      <nav class="navbar">
-        <ul class="navbar__items">
-          <li><a class="navbar__link" href="#">Collections</a></li>
-          <li><a class="navbar__link" href="#">Men</a></li>
-          <li><a class="navbar__link" href="#">Women</a></li>
-          <li><a class="navbar__link" href="#">About</a></li>
-          <li><a class="navbar__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-
       <!-- inicio modal navbar -->
       <div class="modal-navbar__background">
         <nav class="modal-navbar">
@@ -54,7 +56,7 @@
           <img src="./images/icon-cart.svg" alt="carrito">
         </div>
         
-        <img src="./images/image-avatar.png" alt="">
+        <img class="header__avatar" src="./images/image-avatar.png" alt="">
       </div>
 
     </header>
@@ -141,9 +143,9 @@
 
  
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">E-commerce sneakers</a>. 
-    Coded by <a href="#">Juan David Campo</a>
-  </div>
+    Coded by <a href="https://github.com/juandacampoc/EcomerceSneakers.git" target="_blank">Juan David Campo</a>
+  </footer>
 </body>
 </html>
