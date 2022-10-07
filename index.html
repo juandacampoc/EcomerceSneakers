@@ -90,11 +90,11 @@
         <div class="details__product-quantity">
           <div class="input">
             <img class="input__minus" src="./images/icon-minus.svg" alt="menos">
-            <input class="input__number" type="number" value="0">
+            <input class="input__number" type="text" value="0">
             <img class="input__plus" src="./images/icon-plus.svg" alt="mas">
           </div>
 
-          <button class="details__button"><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+          <button class="details__button"><img src="./images/icon-cart-white.svg" alt="">Add to cart</button>
         </div>
 
         </article>
@@ -104,15 +104,15 @@
     <div class="cart-modal">
       <p class="cart-modal__title">Cart</p>
       <div class="cart-modal__checkout-container">
-        <div class="cart-modal__details container">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <div class="cart-modal__details-container">
+          <img class="cart-modal__image" src="./images/image-product-1-thumbnail.jpg" alt="">
           <div>
             <p class="cart-modal__product">Atumn Limited Edition...</p>
             <p class="cart-modal__price">$125 x 3 <span>$375.00</span></p>
           </div>
           <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="delete">
         </div>
-        <button class="cart-modal__delete">Checkout</button>
+        <button class="cart-modal__checkout">Checkout</button>
       </div>
     </div>
     <!-- fin cart modal -->    
@@ -121,7 +121,9 @@
     <!-- inicio galery modal -->    
     <div class="modal-gallery__background">
       <article class="modal-gallery">
-        <img class="modal-gallery__close" src="./images/icon-close.svg" alt="">
+        <div class="modal-gallery__close-container">
+          <img class="modal-gallery__close" src="./images/icon-close.svg" alt="">
+        </div>
 
         <div class="modal-gallery__image-container">
           <img class="modal-gallery__previus" src="./images/icon-previous.svg" alt="previus">
@@ -147,5 +149,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">E-commerce sneakers</a>. 
     Coded by <a href="https://github.com/juandacampoc/EcomerceSneakers.git" target="_blank">Juan David Campo</a>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
